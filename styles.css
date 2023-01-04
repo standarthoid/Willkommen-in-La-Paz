@@ -1,7 +1,88 @@
-h1 {
-  font-family: "Poppins";
-  font-style: normal;
+header h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1.5;
+  margin: 0;
+}
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin-top: 30px;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-style: normal;
+  text-align: center;
+}
+header h3 {
+  font-weight: 900;
+  line-height: 1.5;
+  font-size: 24px;
+  margin-top: 80px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins";
+}
+header a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 16px 32px;
+  border-radius: 2px;
+  letter-spacing: 3px;
+  margin: 48px auto;
+  display: block;
+  color: black;
+  background: white;
+  max-width: 200px;
+  text-transform: uppercase;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: darkviolet;
+}
+
+header {
+  background-image: url("images/LaPazNightIllimani.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px;
+  background-position: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+    line-height: 1;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
