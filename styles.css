@@ -49,8 +49,20 @@ header a {
 
 footer {
   margin-top: 30px;
-  text-align: center;
   font-size: 12px;
+  background-image: linear-gradient(rgba(20, 1, 30, 0.6), rgba(20, 1, 30, 0.6)),
+    url("images/LagunaColorada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 100px 0;
+  text-align: left;
+}
+footer h3 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 a {
@@ -65,10 +77,42 @@ header {
   padding: 150px;
   background-position: center;
 }
-
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 4fr;
+  grid-gap: 30px;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+footer p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  opacity: 0.9;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 900px) {
@@ -85,4 +129,23 @@ header {
   header h3 {
     font-size: 12px;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  footer {
+    padding: 30px 0;
+  }
+}
+
+.below {
+  text-align: center;
+  background-image: none;
+  margin: 0;
+  padding: 30px;
+}
+.footer2 {
+  text-decoration: none;
 }
