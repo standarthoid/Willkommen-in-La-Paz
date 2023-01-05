@@ -159,8 +159,20 @@ footer ul {
   margin: 0;
   padding: 0;
 }
+.tercery h3 {
+  text-align: center;
+}
+.tercery h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.images-grid {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
 .image-responsive {
-  width: 185px;
+  max-width: 185px;
   height: 185px;
   object-position: center;
   display: inline-block;
@@ -168,6 +180,14 @@ footer ul {
 .maps {
   width: 100%;
   aspect-ratio: 1 / 1;
+}
+.images {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.tercery h2,
+h3 {
+  text-align: center;
 }
 .grid-2-columns {
   display: grid;
