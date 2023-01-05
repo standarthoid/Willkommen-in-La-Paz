@@ -163,6 +163,15 @@ footer ul {
   width: 185px;
   height: 185px;
   object-position: center;
+  display: inline-block;
+}
+.maps {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .grid-3-columns {
   display: grid;
@@ -243,8 +252,25 @@ p {
   footer {
     padding: 30px 0;
   }
+  .image-responsive {
+    width: 100%;
+    height: auto;
+    object-position: center;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
 }
-
+@media (max-width: 1000px) {
+  .grid-3-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+}
 .below {
   text-align: center;
   background-image: none;
